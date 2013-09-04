@@ -1,0 +1,15 @@
+{
+    "name": "PRISM block",
+    "version": "1.1",
+	"manifest_version": 2,
+	"description": "Extension that blocks all outgoing connections to companies involved in the NSA's PRISM project",
+    "background": {
+        "scripts": ["background.js"]
+      },
+	"permissions": [ 
+        "webRequest",
+        "webRequestBlocking",
+        "*://*.google.com/*",
+        "*://*/*"
+    ]
+}
